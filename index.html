@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ayaka Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Zen Kaku Gothic New', sans-serif; }
+.font-display { font-family: 'Cormorant Garamond', serif; }
+</style>
+
+</head>
+
+<body class="bg-[#FAF7F2] text-[#3D3028]">
+
+<!-- ヘッダー -->
+<header class="fixed top-0 w-full bg-white/80 backdrop-blur z-50">
+  <div class="max-w-6xl mx-auto flex justify-between p-5">
+    <h1 class="font-display text-xl">Ayaka</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ヒーロー -->
+<section class="py-20 flex items-center justify-center text-center">
+  <div>
+    <p class="text-sm tracking-widest text-[#D4A0A0] mb-4">Web Designer</p>
+    <h2 class="font-display text-6xl mb-4">Ayaka</h2>
+    <p class="italic text-[#7A6B5D] mb-6">心地よさを、デザインに。</p>
+    <img src="images/profile.jpg" class="w-40 mx-auto rounded-2xl object-cover mt-4 mb-6 shadow-xl">
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24 px-6 max-w-4xl mx-auto">
+  <h2 class="font-display text-4xl mb-10">About</h2>
+  <p class="leading-relaxed">
+    WebデザイナーのAyakaです。LP制作・WordPress実装を中心に活動しています。
+    余白とタイポグラフィを大切に、心地よいデザインを制作します。
+  </p>
+</section>
+
+<!-- Works -->
+<section id="works" class="py-24 px-6">
+  <h2 class="font-display text-4xl text-center mb-16">Works</h2>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <!-- Card -->
+    <div class="rounded-2xl overflow-hidden shadow bg-white">
+      <div class="aspect-[4/3] relative overflow-hidden">
+        <img src="images/work1.jpg" class="w-full h-full object-cover brightness-90">
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+          <p class="text-white font-display">LP Design</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow bg-white">
+      <div class="aspect-[4/3] relative overflow-hidden">
+        <img src="images/work2.jpg" class="w-full h-full object-cover brightness-90">
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+          <p class="text-white font-display">WordPress</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow bg-white">
+      <div class="aspect-[4/3] relative overflow-hidden">
+        <img src="images/work3.jpg" class="w-full h-full object-cover brightness-90">
+        <div class="absolute inset-0 flex items-center justify-center bg-black/30">
+          <p class="text-white font-display">Banner</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 px-6 max-w-xl mx-auto">
+  <h2 class="font-display text-4xl text-center mb-10">Contact</h2>
+
+  <form class="space-y-4">
+    <input type="text" placeholder="お名前" class="w-full p-3 border rounded-lg">
+    <input type="email" placeholder="メール" class="w-full p-3 border rounded-lg">
+    <textarea placeholder="お問い合わせ" class="w-full p-3 border rounded-lg"></textarea>
+    <button class="w-full bg-[#B8956A] text-white py-3 rounded-lg">
+      送信
+    </button>
+  </form>
+</section>
+
+<!-- フッター -->
+<footer class="text-center py-10 text-sm text-[#7A6B5D]">
+  © Ayaka Portfolio
+</footer>
+
+</body>
+</html>
